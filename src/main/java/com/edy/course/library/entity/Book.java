@@ -13,7 +13,7 @@ public class Book implements Serializable {
 
     private final static long serialVersionUID = 1L;
 
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id @GeneratedValue
     private UUID id;
 
     @Column(length = 30, nullable = false, unique = true)
